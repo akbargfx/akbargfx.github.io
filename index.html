@@ -5,18 +5,115 @@
         <meta charset="UTF-8">
         <meta lagnguage="en">
         <title> AkbarGFX </title>
+        <link rel="stylesheet" href="style.css">
+        
+        <style type:"stylesheet">
+            body{
+    background-color:#f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+hr{
+    color: #e0e0e0;
+    
+}
+.BrandName{
+    color:tomato;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-size: 60px;
+    text-align: center;
+    
+}
+
+.tagline{
+    text-align: center;
+    font-size: 15px;
+    color:gray
+}
+
+th{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: tomato;
+    color: white;
+    border: 1px;
+    border-color: #535353;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+td{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    border-style: 1px, solid, #535353;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.content{
+    text-align: left;
+}
+
+.package{
+    text-align: center;
+}
+
+#submit{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: tomato;
+    color: white;
+    border: 1px;
+    border-color: #535353;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+#clear{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: 
+    #ffc4b7;
+    color: #151515;
+    border: 1px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    
+}
+        </style>
     </head>
 
     <body>
         <div align="center">
-            <img src="akbargfx.github.io/Logo.png"height="80" alt="Image not found."/>
+            <img src="C:\Users\priti\Desktop\AkbarGFX site\Logo.png" title="AkbarGFX" height="80" alt="Image not found."/>
         </div>
 
-        <h1 align="center"> AkbarGFX </h1>
-        <p align="center"> Logo & brand identity designer. </p>
+        <h2 class="BrandName"> AkbarGFX </h2>
+        <p class="tagline"> Logo & brand identity designer. </p>
         <hr/>
         
-        <table align="center" border="1px" width="400">
+        <table align="center">
             <thead>
                 <caption> <h3> Packages </h3> </caption>
                 <tr>
@@ -27,24 +124,24 @@
                 </tr>
             </thead>
 
-            <tbody align="center">
+            <tbody>
                 <tr>
-                    <td> Initial concept </td>
-                    <td> 2 </td>
-                    <td> 3 </td>
-                    <td> 5 </td>
+                    <td class="content"> Initial concept </td>
+                    <td class="package"> 2 </td>
+                    <td class="package"> 3 </td>
+                    <td class="package"> 5 </td>
                 </tr>
                 <tr>
-                    <td> Revisions </td>
-                    <td> 5 </td>
-                    <td> 9 </td>
-                    <td> Unlimited </td>
+                    <td class="content"> Revisions </td>
+                    <td class="package"> 5 </td>
+                    <td class="package"> 9 </td>
+                    <td class="package"> Unlimited </td>
                 </tr>
                 <tr>
-                    <td> Vector file </td>
-                    <td> No </td>
-                    <td> Yes </td>
-                    <td> Yes </td>
+                    <td class="content"> Vector file </td>
+                    <td class="package"> No </td>
+                    <td class="package"> Yes </td>
+                    <td class="package"> Yes </td>
                 </tr>
             </tbody>
 
@@ -57,19 +154,19 @@
             
             <div>
                 <label for="package"> 1. Select your desired package: </label>
-                <input type="radio" name="package" id="package" value="basic"> Basic
-                <input type="radio" name="package" id="package" value="standard"> Standard
-                <input type="radio" name="package" id="package" value="Premium"> Premium
+                <input type="radio" name="package" id="package1" value="basic"> Basic
+                <input type="radio" name="package" id="package2" value="standard"> Standard
+                <input type="radio" name="package" id="package3" value="Premium"> Premium
             </div> <br/>
             
             <div>
                 <label for="logoname"> 2. Company or brand name: </label> <br/>
-                <textarea cols="60" rows="2"></textarea>
+                <textarea cols="65" rows="1"></textarea>
             </div> <br/>
 
             <div>
                 <label for="description"> 3. Describe about your service and target audience: </label> <br/>
-                <textarea cols="60" rows="5"></textarea>
+                <textarea cols="65" rows="5"></textarea>
             </div> <br/>
 
             <div>
@@ -79,9 +176,8 @@
             <hr/>
 
             <div align="center">
-                <input type="reset" value="Clear">
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                <input type="submit" value="Submit">
+                <input type="reset" value="Clear" id="clear">
+                <input type="submit" value="Submit" id="submit">
             </div> <br/>
 
         </form>
